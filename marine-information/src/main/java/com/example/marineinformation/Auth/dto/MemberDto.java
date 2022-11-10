@@ -1,4 +1,4 @@
-package com.example.marineinformation.Auth;
+package com.example.marineinformation.Auth.dto;
 
 import com.example.marineinformation.entities.MemberEntity;
 import lombok.Getter;
