@@ -10,4 +10,7 @@ import java.util.Optional;
 public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
 
     Optional<MemberEntity> findByUsernameAndPassword(String userName, String password);
+
+    // jwtToken Test용 후에 username과 password 둘다 가져와야함
+    Optional<MemberEntity> findByUsername(String userName);
 }

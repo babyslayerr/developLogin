@@ -37,7 +37,7 @@ public class AuthController {
         }
         else{
             String token = jwtUtils.createToken();
-            response.addCookie(new Cookie("Token",token));
+            response.addCookie(new Cookie("authentication",token));
             HttpSession session = request.getSession();
             session.setAttribute("authentication",result);
             response.setStatus(HttpServletResponse.SC_OK);
